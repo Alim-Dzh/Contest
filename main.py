@@ -3,9 +3,6 @@ import random
 
 def finish(ab, ac, bc):
     #переменные
-    sign_ab = ''
-    sign_ac = ''
-    sign_bc = ''
     dct={"a":0,"b":0,"c":0,}
 
 
@@ -269,42 +266,6 @@ def MaxMinScore(newList):
 N=Score[0]
 Score.pop(0)
 print(MaxMinScore(Score))'''
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
