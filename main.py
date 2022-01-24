@@ -1,4 +1,6 @@
 import math
+import random
+
 def finish(ab, ac, bc):
     #переменные
     sign_ab = ''
@@ -55,20 +57,6 @@ res_cb = str(input())
 print(finish(res_ab, res_ac, res_cb)'''
 
 
-
-#comments
-'''
-3
--9 -8 -7 7 7 7 6 6 6 5 -4 2 3 -3 -3 -4 -4 -6 -6 9 9
-
-
-
-'''
-
-
-
-
-import math
 def numSort(lnum):
     if lnum[-1]==0 and lnum[0]==0 and len(set(lnum))>1:
         return('NO')
@@ -211,59 +199,10 @@ def numSort(lnum):
                 fStr += str(lnum[i]) + ' '
             return (fStr)
 
-import random
+
 '''cnt = int(input())
 num = list(map(int,input().split()))
 print(numSort(num))'''
-
-for i in range(0,100):
-
-    a = random.randint(-50,50)
-    b = random.randint(-40,40)
-    c = random.randint(-30,30)
-    d = random.randint(-20,20)
-    e = random.randint(-10,10)
-    f = random.randint(-9,9)
-    g = random.randint(-8,8)
-    h = random.randint(-7,7)
-    num = [a,b,c,d,e,f,g,h]
-    if (numSort(num))!="NO":
-        myList = list(map(int,numSort(num).split()))
-        for i in range(0,len(myList)):
-            if i == len(myList)-1:
-                continue
-            else:
-                if myList[i]>myList[i+1]:
-                    print(str(num) + " Ошибка" + str(myList) + str(myList[i]))
-                    break
-                print(str(num) + "Без Ошибки" + str(myList))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-'''elif (lnum[k] > lnum[k + 1] and (lnum[k] * (-1) <= (lnum[k + 1] * (-1))) and ((-1) * (lnum[k] >= lnum[k - 1]) or k == 0)):
-                        lnum[k] *= (-1)
-                        lnum[k + 1] *= (-1)
-                        print(lnum)
-
-                    elif lnum[k] > lnum[k + 1] and ((-1) * (lnum[k]) <= (lnum[k + 1]) and (-1)*lnum[k] >=lnum[k - 1]) and k!=0:
-                        lnum[k+1]*=(-1)
-                        print(lnum)'''
-
-
-
-
-
 
 
 
@@ -316,46 +255,6 @@ K_new = int(input())
 A_new = int(input())
 B_new = int(input())
 print(Sweets(N_new,K_new,A_new,B_new))'''
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 def MaxMinScore(newList):
     max_score = max(newList)
